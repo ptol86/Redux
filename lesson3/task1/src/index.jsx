@@ -2,6 +2,7 @@ import  store  from './store';
 import  { deleteUser, addUser, updateUser }  from './users.actions';
 import  {increment, decrement, reset} from './counter.actions';
 
+store.subscribe(() => console.log(store.getState()))
 
 const user = { id: 76, name: 'Sarah' };
 const user2 = { id: 716, name: 'Tom' };
@@ -19,7 +20,7 @@ const onUpdateUser = (id, userData) => {
     store.dispatch(updateUser(id, userData))
 }
 onUpdateUser(716, {name: "John"})
-onDeleteUser(716)
+// onDeleteUser(716)
 
 // console.log(store.getState())
 // console.log(onAddUser.prototype)
@@ -37,4 +38,4 @@ store.dispatch(increment())
 store.dispatch(increment())
 store.dispatch(increment())
 
-console.log((store.getState()))
+
