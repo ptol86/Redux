@@ -6,7 +6,7 @@ const webpack = require("webpack");
 module.exports = (env, argv) => {
   const isProduction = argv.mode === "production";
   const config = {
-    entry: "./src/index.jsx",
+    entry: "./src/counter.jsx",
     output: {
       filename: "bundle.js",
       path: __dirname + '/review_build',
