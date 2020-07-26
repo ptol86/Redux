@@ -6,16 +6,13 @@ const userReducer = (state = initialState, action) => {
     
     switch(action.type) {
         case SET_USER: {
-                return {
-                state: action.payload.userData
-            };
+                return action.payload.userData
+            ;
         }
-        case REMOVE_USER:{
-            const clearList = null
-            return {
-            clearList,
-            }
-        };
+        case REMOVE_USER:
+            return null
+            
+        ;
         
         default: 
             return state;

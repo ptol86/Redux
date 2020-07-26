@@ -12,6 +12,7 @@ const user2 = { id: 716, name: 'Tom' };
 store.dispatch(setLanguage("jp"))
 store.dispatch(addProduct({ id: 76, name: 'milk' }))
 store.dispatch(setUser(user))
+store.dispatch(removeUser())
 // store.dispatch(removeProduct(76))
 // onDeleteUser(716)
 
